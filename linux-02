@@ -1,0 +1,60 @@
+root & non root :
+sudo -i		: to change to root user
+in linux we need to use CLI 
+CLI : Command line interface
+
+file commands:
+touch 		   	: to create a file
+ls					  : to list the file  (short list)
+ll					  : to list the file  (long list)
+ls -a				: to see the hidden files (start with .)
+ll -a				: to see the hidden files (start with .)
+more 				: to see the content of a file
+cat 				  : to see the content of a file
+cat>file1		: to insert the content (first time)
+ctrl + d 		: to save the content of file
+cat>>file1		: to insert the content (second time + ....)
+clear/ctrll :  to clear the sceern
+
+======================================================================================================================================================
+cp 					  : to copy content form one file to another file
+mv					  : to move content form one file to another file
+mv					  : to rename a file
+rm 					  : to remove a file
+rm -f				  : to remove a file forcefully
+rm -f *			  : to remove all files forecfully
+rm -f p*			  : to remove all files forecfully starting with p
+touch file{1..10} : to create multiple files in a pattren
+rm -f python{13..17} : to remove python13 to python17 files
+echo "nareshit" > file1 : to insert nareshit into file1
+
+
+
+in linux folder is also called as directory.
+
+mkdir 			: to create a dir
+pwd				: to print/present working directory
+cd 				: to change directory
+cd ..			: to get one dir back
+cd ../../	   : to get two dir back
+cd	 -			: to go to previous dir
+
+touch dir1/raham : to create a file called raham inside dir1
+mkdir dir1/dir2  : to create a dir2 inside dir1
+rm -rf dir1/ : to remove recursive inside the dir1
+
+yum install tree -y
+
+package manager : yum (yellowdog update modifier)
+install : action
+pkg name : tree
+permission : -y
+
+head			: to print the top 10 lines
+head -5		: to print the top 5 lines
+head -12		: to print the top 12 lines
+tail			: to print the bottom 10 lines
+tail -5		: to print the bottom 5 lines
+tail -12		: to print the bottom 12 lines
+wc				: to print lines, words and char
+sed -n '4,12p' file1  : to print line number 4 to 12
