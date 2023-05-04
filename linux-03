@@ -1,0 +1,86 @@
+DAY-02:
+
+VIM EDITOR: To edit the files
+i	 = used to insert the content
+ecs	 = to get out of insert mode
+
+WE HAVE 3 MODES:
+
+3. SAVE MODE
+:w	:	save
+:q	:	quit
+:wq	:	save and exit
+:w!	:	forcefully save
+:q!	:	forcefully quit
+:wq!	:	forcefully save and exit 
+
+
+2. INSERT MODE
+i	:	It will insert the data 
+I	:	Moves to beginning of the line
+A	:	moves to the end of the line
+o	:	moves down to that line
+O	:	moves up to that line
+
+
+1. COMMAND MODE
+gg	:	top of the file
+shift+g	:	bottom of the file
+yy	:	copies single line
+3yy	:	copies 3 lines
+p	:	paste the copied line
+3p	:	paste the copied line for 3 times
+dd	:	deletes the line
+3dd	:	deletes three lines
+u	:	undo
+/word	:	finds the particular word
+:set number:	To set the numbers in line
+:83	:	To go to 83rd line
+
+
+
+=========================================================
+
+-rw-r--r-- 1 root root 0 May  4 05:39 file1
+
+FILE TYPES:
+
+-			: Regular file
+b			: blocked file
+c      : charcter file
+d			: directory
+l			: link file
+.      : hidden file
+
+
+PERMISSIONS: (rw-r--r--)
+
+Types of permissions: 3 types
+
+Read				:	 r		: 4
+Write				:   w		: 2
+Executable	   :   x		: 1
+
+Categories:
+
+User
+Group
+Others
+
+Methods to change permissions:
+
+numerical method: chmod 777 file1
+alphabetical method: chmod u=rwx,g=rx,o=rw file1
+
+==============================================================
+
+useradd raham 		: to create a user
+cat /etc/passwd 		: to check user list
+getent passwd			: to check user list
+cat /etc/group 		: to check groups list
+getent group			: to check user list
+cd /home/				: to check the user directory
+chown raham file1  : to change the ownership 
+chgrp raham file1  : to change the group
+chown raham:raham file2 : to chnage ownership and group at same time
+usermod -aG DevOps Abraham: to add user to groups
